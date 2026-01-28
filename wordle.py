@@ -14,3 +14,12 @@ def verificador_palabra(palabra_ingresada, palabra_secreta):
             letras_verificadas.append(f"({palabra_ingresada[i]})")
         else:
             letras_verificadas.append(palabra_ingresada[i])
+    return letras_verificadas
+while intentos < 6:
+    print(f"te quedan {6 - intentos} intentos")
+    intentos = intentos + 1
+    palabra_ingresada = input("Ingrese una palabra")
+    verificador_palabra(palabra_ingresada,palabra_secreta)
+
+    print(f"la palabra ingresada es: {palabra_ingresada}")
+    print(letras_verificadas)
