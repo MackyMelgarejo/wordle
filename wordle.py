@@ -23,3 +23,6 @@ while intentos < 6:
 
     print(f"la palabra ingresada es: {palabra_ingresada}")
     print(letras_verificadas)
+    if palabra_ingresada==palabra_secreta:
+        print("ganaste")
+        break
